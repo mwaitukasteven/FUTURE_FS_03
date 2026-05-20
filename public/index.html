@@ -1,0 +1,168 @@
+<!-- FILE: public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>The Daily Brew | Fresh Coffee & Vibes</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Playfair + Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/15553428891?text=Hi!%20I%20saw%20your%20website%20and%20would%20love%20to%20order%20or%20ask%20about%20the%20menu" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="logo">The Daily <span>Brew</span></div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+        <h1>Fresh coffee.<br>Warm vibes.</h1>
+        <p>Locally roasted, ethically sourced. Your favorite neighborhood café in the heart of downtown.</p>
+        <div class="hero-buttons">
+            <a href="#menu" class="btn btn-primary">☕ See Menu</a>
+            <a href="#contact" class="btn btn-outline">📍 Visit Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- Menu Highlights -->
+<section id="menu" class="section">
+    <div class="container">
+        <h2 class="section-title">Our Specialties</h2>
+        <div class="grid-3">
+            <div class="card">
+                <i class="fas fa-mug-hot"></i>
+                <h3>Artisan Lattes</h3>
+                <p>Oat, almond, or classic – single-origin espresso.</p>
+                <span class="price">$4.50</span>
+            </div>
+            <div class="card">
+                <i class="fas fa-bread-slice"></i>
+                <h3>Fresh Pastries</h3>
+                <p>Baked daily: croissants, cinnamon rolls & vegan banana bread.</p>
+                <span class="price">$3.25</span>
+            </div>
+            <div class="card">
+                <i class="fas fa-leaf"></i>
+                <h3>Breakfast Bowls</h3>
+                <p>Avocado toast, acai bowls & savory oatmeal.</p>
+                <span class="price">$7.90</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About + Story -->
+<section id="about" class="section bg-soft">
+    <div class="container">
+        <h2 class="section-title">Our Story</h2>
+        <div class="story-card">
+            <p>The Daily Brew started as a passion project by two friends who wanted a space that felt like home. We partner with local roasters and bakeries to bring you the freshest ingredients. More than coffee – we're a community spot for remote workers, friends, and morning regulars.</p>
+            <div class="features-row">
+                <span><i class="fas fa-wifi"></i> Free WiFi & outlets</span>
+                <span><i class="fas fa-dog"></i> Dog-friendly patio</span>
+                <span><i class="fas fa-music"></i> Live jazz Sundays</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Opening Hours -->
+<section id="hours" class="section">
+    <div class="container">
+        <h2 class="section-title">⏰ Opening Hours</h2>
+        <div class="hours-card">
+            <ul class="hours-list">
+                <li><span>Monday - Friday</span><span>7:00 AM – 8:00 PM</span></li>
+                <li><span>Saturday</span><span>8:00 AM – 9:00 PM</span></li>
+                <li><span>Sunday</span><span>8:00 AM – 6:00 PM</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Contact + Location + Form -->
+<section id="contact" class="section bg-soft">
+    <div class="container">
+        <h2 class="section-title">📍 Find & Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-details">
+                <div class="info-block">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Visit us</h4>
+                        <p>125 Main Street, Dar es salaam</p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Call us</h4>
+                        <p><a href="tel:+255711630071">+255 711630071</a></p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:mwaitukasteven@gmail.com">mwaitukasteven@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <h3>Quick question?</h3>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your name" required>
+                    <input type="email" id="email" placeholder="Email address" required>
+                    <textarea id="message" rows="3" placeholder="Tell us anything... catering, events, or just a coffee chat"></textarea>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+        <div class="map-wrapper">
+            <iframe class="google-map" loading="lazy" allowfullscreen 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.123456789!2d39.264312!3d-6.792354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b7e2f2f2f2f%3A0x8c6b5b3c6d8e2f2a!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1700000000000!5m2!1sen!2stz" 
+                title="The Daily Brew location - Dar es Salaam">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>© 2026 The Daily Brew – Fresh coffee, local love. ☕</p>
+        <div class="social-icons">
+            <i class="fab fa-instagram"><a href="https://instagram.com/mr_mwaituka" target="_blank" rel="noopener noreferrer"></a></i>
+            <i class="fab fa-facebook"><a href="https://facebook.com/steven.mwaituka" target="_blank" rel="noopener noreferrer"></a></i>
+            <i class="fab fa-twitter"><a href="https://twitter.com/thedailybrew" target="_blank" rel="noopener noreferrer"></a></i>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
