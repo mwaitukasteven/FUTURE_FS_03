@@ -1,75 +1,40 @@
-# The Daily Brew - Coffee Shop Website (Dar es Salaam)
+# IronFit Gym - Premier Fitness Center Website
 
-## 🎯 Live Website
-**URL:** https://YOUR_USERNAME.github.io/daily-brew-website/
+## 🌐 Live Demo
+**URL:** https://mwaitukasteven.github.io/FUTURE_FS_03/
 
-## 📋 About This Project
-A professional, mobile-friendly website for a local coffee shop in Dar es Salaam, Tanzania.
+## 💪 About This Project
+A professional, high-energy gym website for IronFit Gym in Dar es Salaam, Tanzania. Features stunning background images, program showcases, trainer profiles, and membership pricing.
 
 ## ✨ Features
-- ✅ Fully responsive (works on phones, tablets, and desktops)
-- ✅ Contact form that sends emails (no backend needed - uses FormSubmit.co)
-- ✅ WhatsApp integration for easy ordering
-- ✅ Google Maps showing location
-- ✅ Smooth scrolling navigation
-- ✅ Modern, warm design
+- ✅ Hero section with full-screen background image
+- ✅ Program cards with hover effects and images
+- ✅ Trainers section with professional photos
+- ✅ Pricing plans with popular tag
+- ✅ Facilities showcase
+- ✅ Contact form integrated with FormSubmit (no backend needed)
+- ✅ WhatsApp integration
+- ✅ Google Maps location
+- ✅ Fully responsive (mobile, tablet, desktop)
+- ✅ Smooth scroll navigation
+- ✅ AOS scroll animations
+- ✅ Counter animation for stats
 
 ## 🛠️ Technologies Used
 - HTML5
-- CSS3 (Flexbox, Grid, CSS Variables)
-- JavaScript (Vanilla - no frameworks)
+- CSS3 (Grid, Flexbox, Variables, Animations)
+- JavaScript (Vanilla)
+- AOS Library (Scroll animations)
 - Font Awesome Icons
-- Google Fonts
-- FormSubmit.co (for contact form)
+- Unsplash Images (Free stock photos)
 
-## 🚀 How to Deploy to GitHub Pages
+## 📸 Image Sources
+All images are from Unsplash (free for commercial use):
+- Hero Background: Gym interior with weights
+- Program images: Weightlifting, Yoga, Cardio, Personal Training
+- Trainer images: Professional fitness models
 
-1. **Create a GitHub repository**
-2. **Upload these files:**
-   - `index.html`
-   - `css/style.css`
-   - `js/main.js`
-   - `README.md`
+## 🚀 Deployment to GitHub Pages
 
-3. **Enable GitHub Pages:**
-   - Go to Repository → Settings → Pages
-   - Select branch: `main`
-   - Select folder: `/ (root)`
-   - Click Save
-
-4. **Wait 1-2 minutes** → Your site is live at:
-   `https://YOUR_USERNAME.github.io/REPO_NAME/`
-
-## 📧 Contact Form Setup (Important)
-The form uses **FormSubmit.co** which forwards messages to:
-`hello@thedailybrew.co.tz`
-
-**To use your own email:**
-1. Open `index.html`
-2. Find: `action="https://formsubmit.co/hello@thedailybrew.co.tz"`
-3. Replace with your email address
-
-## 🎨 Customization
-- Change colors: Edit CSS variables in `style.css`
-- Change content: Edit text in `index.html`
-- Change map location: Update Google Maps embed URL
-
-## 💼 For Business Owners
-This website helps your café:
-- Look professional online
-- Attract more customers
-- Show hours, menu, and location
-- Allow customers to contact you easily
-
-## 📱 Test on Mobile
-The website is fully responsive. Test by:
-- Resizing your browser window
-- Using Chrome DevTools mobile view
-- Opening on an actual phone
-
-## 🔧 No Backend Needed!
-This is a static website that works without any server. Host it for free on GitHub Pages forever!
-
----
-
-**Built for The Daily Brew - Dar es Salaam, Tanzania** ☕
+1. **Create repository** on GitHub
+2. **Upload all files** maintaining folder structure:

@@ -3,157 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>The Daily Brew | Fresh Coffee & Vibes - Dar es Salaam</title>
-    <!-- Font Awesome 6 (free) -->
+    <title>IronFit Gym | Dar es Salaam's Premier Fitness Center</title>
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Playfair + Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/255755123456?text=Hi!%20I%20saw%20your%20website%20and%20would%20love%20to%20order%20or%20ask%20about%20the%20menu" 
-   class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/255755123456?text=Hi!%20I%20want%20to%20join%20IronFit%20Gym" class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
 
 <!-- Navigation -->
 <nav class="navbar">
     <div class="container nav-container">
-        <div class="logo">The Daily <span>Brew</span></div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <div class="logo">
+            <i class="fas fa-dumbbell"></i>
+            <span>Iron</span>Fit
+        </div>
+        <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#hours">Hours</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#trainers">Trainers</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Hero Section -->
+<!-- Hero Section with Background Image -->
 <section id="home" class="hero">
-    <div class="container hero-content">
-        <h1>Fresh coffee.<br>Warm vibes.</h1>
-        <p>Locally roasted, ethically sourced. Your favorite neighborhood café in the heart of Dar es Salaam.</p>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content" data-aos="fade-up">
+        <h1>Transform Your <span>Body</span>,<br>Transform Your <span>Life</span></h1>
+        <p>Dar es Salaam's most advanced fitness center with world-class equipment, expert trainers, and an unbeatable community.</p>
         <div class="hero-buttons">
-            <a href="#menu" class="btn btn-primary">☕ See Menu</a>
-            <a href="#contact" class="btn btn-outline">📍 Visit Us</a>
+            <a href="#pricing" class="btn btn-primary">Start Your Journey <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">Free Trial <i class="fas fa-calendar-alt"></i></a>
         </div>
-    </div>
-</section>
-
-<!-- Menu Highlights -->
-<section id="menu" class="section">
-    <div class="container">
-        <h2 class="section-title">Our Specialties</h2>
-        <div class="grid-3">
-            <div class="card">
-                <i class="fas fa-mug-hot"></i>
-                <h3>Artisan Lattes</h3>
-                <p>Oat, almond, or classic – single-origin espresso.</p>
-                <span class="price">TZS 12,000</span>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>500+</h3>
+                <p>Active Members</p>
             </div>
-            <div class="card">
-                <i class="fas fa-bread-slice"></i>
-                <h3>Fresh Pastries</h3>
-                <p>Baked daily: croissants, cinnamon rolls & vegan banana bread.</p>
-                <span class="price">TZS 8,000</span>
+            <div class="stat">
+                <h3>15+</h3>
+                <p>Expert Trainers</p>
             </div>
-            <div class="card">
-                <i class="fas fa-leaf"></i>
-                <h3>Breakfast Bowls</h3>
-                <p>Avocado toast, acai bowls & savory oatmeal.</p>
-                <span class="price">TZS 18,000</span>
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Access</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- About + Story -->
-<section id="about" class="section bg-soft">
+<!-- Programs/Services Section with Images -->
+<section id="programs" class="section">
     <div class="container">
-        <h2 class="section-title">Our Story</h2>
-        <div class="story-card">
-            <p>The Daily Brew started as a passion project by two friends who wanted a space that felt like home. We partner with local roasters and bakeries to bring you the freshest ingredients. More than coffee – we're a community spot for remote workers, friends, and morning regulars.</p>
-            <div class="features-row">
-                <span><i class="fas fa-wifi"></i> Free WiFi & outlets</span>
-                <span><i class="fas fa-dog"></i> Dog-friendly patio</span>
-                <span><i class="fas fa-music"></i> Live jazz Sundays</span>
+        <h2 class="section-title" data-aos="fade-up">Our <span>Programs</span></h2>
+        <p class="section-subtitle" data-aos="fade-up">Choose from a variety of specialized fitness programs</p>
+        <div class="grid-4">
+            <div class="program-card" data-aos="flip-left">
+                <div class="program-image">
+                    <img src="images/weightlifting.jpg" alt="Weightlifting">
+                    <div class="program-overlay">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                </div>
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase power with our premium equipment and personalized plans.</p>
+                <span class="program-tag">🔥 Popular</span>
+            </div>
+            <div class="program-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="program-image">
+                    <img src="images/yoga.jpg" alt="Yoga">
+                    <div class="program-overlay">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                </div>
+                <h3>Yoga & Meditation</h3>
+                <p>Find your inner peace and improve flexibility with guided sessions.</p>
+                <span class="program-tag">🧘 Calm</span>
+            </div>
+            <div class="program-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="program-image">
+                    <img src="images/cardio.jpg" alt="Cardio">
+                    <div class="program-overlay">
+                        <i class="fas fa-running"></i>
+                    </div>
+                </div>
+                <h3>Cardio Blast</h3>
+                <p>High-intensity workouts to burn fat and boost endurance.</p>
+                <span class="program-tag">⚡ Energy</span>
+            </div>
+            <div class="program-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="program-image">
+                    <img src="images/personal-trainer.jpg" alt="Personal Training">
+                    <div class="program-overlay">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                </div>
+                <h3>Personal Training</h3>
+                <p>One-on-one sessions with certified trainers tailored to your goals.</p>
+                <span class="program-tag">👑 Premium</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Opening Hours -->
-<section id="hours" class="section">
+<!-- Facilities Section -->
+<section id="facilities" class="section bg-dark">
     <div class="container">
-        <h2 class="section-title">⏰ Opening Hours</h2>
-        <div class="hours-card">
-            <ul class="hours-list">
-                <li><span>Monday - Friday</span><span>7:00 AM – 8:00 PM</span></li>
-                <li><span>Saturday</span><span>8:00 AM – 9:00 PM</span></li>
-                <li><span>Sunday</span><span>8:00 AM – 6:00 PM</span></li>
-            </ul>
+        <h2 class="section-title" data-aos="fade-up">World-Class <span>Facilities</span></h2>
+        <div class="facilities-grid">
+            <div class="facility-item" data-aos="zoom-in">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Premium Equipment</h3>
+                <p>Technogym & Life Fitness machines</p>
+            </div>
+            <div class="facility-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-swimming-pool"></i>
+                <h3>Swimming Pool</h3>
+                <p>25m heated indoor pool</p>
+            </div>
+            <div class="facility-item" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Lockers</h3>
+                <p>Digital lockers with charging</p>
+            </div>
+            <div class="facility-item" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-tshirt"></i>
+                <h3>Premium Apparel Shop</h3>
+                <p>Official gym merchandise</p>
+            </div>
+            <div class="facility-item" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-wifi"></i>
+                <h3>Free High-Speed WiFi</h3>
+                <p>Stay connected while you train</p>
+            </div>
+            <div class="facility-item" data-aos="zoom-in" data-aos-delay="500">
+                <i class="fas fa-smoothie"></i>
+                <h3>Protein Bar</h3>
+                <p>Healthy shakes & snacks</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Contact + Location + Form (Backend-Free with FormSubmit) -->
-<section id="contact" class="section bg-soft">
+<!-- Pricing Section -->
+<section id="pricing" class="section">
     <div class="container">
-        <h2 class="section-title">📍 Find & Contact Us</h2>
+        <h2 class="section-title" data-aos="fade-up">Membership <span>Plans</span></h2>
+        <p class="section-subtitle" data-aos="fade-up">Choose the plan that fits your fitness journey</p>
+        <div class="pricing-grid">
+            <div class="pricing-card" data-aos="flip-up">
+                <div class="pricing-header">
+                    <h3>Basic</h3>
+                    <div class="price">
+                        <span class="currency">TZS</span>
+                        <span class="amount">85,000</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Gym Access (6am-10pm)</li>
+                    <li><i class="fas fa-check"></i> Locker Room Access</li>
+                    <li><i class="fas fa-check"></i> Free WiFi</li>
+                    <li><i class="fas fa-times"></i> Personal Training</li>
+                    <li><i class="fas fa-times"></i> Pool Access</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+            </div>
+            <div class="pricing-card popular" data-aos="flip-up" data-aos-delay="100">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3>Pro</h3>
+                    <div class="price">
+                        <span class="currency">TZS</span>
+                        <span class="amount">150,000</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                    <li><i class="fas fa-check"></i> All Group Classes</li>
+                    <li><i class="fas fa-check"></i> Pool & Sauna</li>
+                    <li><i class="fas fa-check"></i> 2 Free PT Sessions/month</li>
+                    <li><i class="fas fa-check"></i> Towel Service</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+            </div>
+            <div class="pricing-card" data-aos="flip-up" data-aos-delay="200">
+                <div class="pricing-header">
+                    <h3>Elite</h3>
+                    <div class="price">
+                        <span class="currency">TZS</span>
+                        <span class="amount">250,000</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Everything in Pro</li>
+                    <li><i class="fas fa-check"></i> Unlimited Personal Training</li>
+                    <li><i class="fas fa-check"></i> Nutrition Planning</li>
+                    <li><i class="fas fa-check"></i> Guest Passes (4/month)</li>
+                    <li><i class="fas fa-check"></i> Premium Locker</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trainers Section with Images -->
+<section id="trainers" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Meet Our <span>Expert Trainers</span></h2>
+        <p class="section-subtitle" data-aos="fade-up">Certified professionals ready to guide you</p>
+        <div class="trainers-grid">
+            <div class="trainer-card" data-aos="zoom-in">
+                <div class="trainer-image">
+                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=300&h=300&fit=crop" alt="Trainer John">
+                </div>
+                <h3>John Mwakasege</h3>
+                <p>Head Strength Coach</p>
+                <div class="trainer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="trainer-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="trainer-image">
+                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=300&h=300&fit=crop" alt="Trainer Sarah">
+                </div>
+                <h3>Sarah Hassan</h3>
+                <p>Yoga & Mobility Expert</p>
+                <div class="trainer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="trainer-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="trainer-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop" alt="Trainer Mike">
+                </div>
+                <h3>Mike Kimathi</h3>
+                <p>Cardio & HIIT Specialist</p>
+                <div class="trainer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="trainer-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="trainer-image">
+                    <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=300&h=300&fit=crop" alt="Trainer Grace">
+                </div>
+                <h3>Grace Peter</h3>
+                <p>Nutrition & Wellness Coach</p>
+                <div class="trainer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Get in <span>Touch</span></h2>
         <div class="contact-grid">
-            <div class="contact-details">
-                <div class="info-block">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <h4>Visit us</h4>
-                        <p>123 Bagamoyo Road, <br>Mikocheni, Dar es Salaam</p>
+                        <h4>Visit Us</h4>
+                        <p>Plot 123, Ali Hassan Mwinyi Road,<br>Mikocheni, Dar es Salaam</p>
                     </div>
                 </div>
-                <div class="info-block">
+                <div class="info-item">
                     <i class="fas fa-phone-alt"></i>
                     <div>
-                        <h4>Call us</h4>
-                        <p><a href="tel:+255711630071">+255 711 630 071</a></p>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+255755123456">+255 711630071</a></p>
                     </div>
                 </div>
-                <div class="info-block">
+                <div class="info-item">
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
                         <p><a href="mailto:mwaitukasteven@gmail.com">mwaitukasteven@gmail.com</a></p>
                     </div>
                 </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>Monday - Friday: 24 Hours<br>Saturday - Sunday: 6am - 10pm</p>
+                    </div>
+                </div>
             </div>
-            <div class="form-wrapper">
-                <h3>Quick question?</h3>
-                <!-- FormSubmit.co - Free, no backend needed -->
-                <form id="contactForm" action="https://formsubmit.co/mwaitukasteven@gmail.com" method="POST">
-                    <!-- FormSubmit configuration -->
+            <div class="contact-form" data-aos="fade-left">
+                <h3>Start Your Journey Today</h3>
+                <form action="https://formsubmit.co/mwaitukasteven@gmail.com" method="POST">
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input type="hidden" name="_subject" value="New message from The Daily Brew website!">
-                    <!-- Success redirect (optional) -->
-                    <input type="hidden" name="_next" value="https://your-domain.com/thank-you.html">
-                    
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                    <input type="email" name="email" id="email" placeholder="Email address" required>
-                    <textarea name="message" id="message" rows="3" placeholder="Tuandikie... swali, catering, au tu coffee chat" required></textarea>
-                    <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
-                    <div id="formFeedback" class="form-feedback"></div>
+                    <input type="hidden" name="_subject" value="New Gym Membership Inquiry">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="tel" name="phone" placeholder="Phone Number">
+                    <select name="interest">
+                        <option value="">Select Program</option>
+                        <option>Strength Training</option>
+                        <option>Yoga</option>
+                        <option>Cardio</option>
+                        <option>Personal Training</option>
+                    </select>
+                    <textarea name="message" rows="3" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
-        <div class="map-wrapper">
-            <iframe class="google-map" loading="lazy" allowfullscreen 
+        <div class="map-wrapper" data-aos="fade-up">
+            <iframe class="google-map" loading="lazy" 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.123456789!2d39.264312!3d-6.792354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b7e2f2f2f2f%3A0x8c6b5b3c6d8e2f2a!2sDar%20es%20Salaam%2C%20Tanzania!5e0!3m2!1sen!2stz!4v1700000000000!5m2!1sen!2stz" 
-                title="The Daily Brew location - Dar es Salaam">
+                title="IronFit Gym Location">
             </iframe>
         </div>
     </div>
@@ -162,15 +346,45 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>© 2026 The Daily Brew – Fresh coffee, local love. ☕ Dar es Salaam</p>
-        <div class="social-icons">
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Iron</span>Fit
+                </div>
+                <p>Your journey to a healthier, stronger you starts here.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#pricing">Membership</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Get fitness tips and offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 IronFit Gym. All rights reserved. | Designed for Dar es Salaam's fittest community</p>
         </div>
     </div>
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
