@@ -1,7 +1,7 @@
 # IronFit Gym - Premier Fitness Center Website
 
 ## 🌐 Live Demo
-**URL:** https://mwaitukasteven.github.io/FUTURE_FS_03/
+**URL:** https://mwaitukasteven.github.io/FUTURE_FS_03
 
 ## 💪 About This Project
 A professional, high-energy gym website for IronFit Gym in Dar es Salaam, Tanzania. Features stunning background images, program showcases, trainer profiles, and membership pricing.
